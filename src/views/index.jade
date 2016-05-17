@@ -5,5 +5,8 @@ html
 	body
 
 		h3 Books
-		each bookThumb in allBooks
-			img(src='#{bookThumb.url}')
+		each book in allBooks
+			img(src="imgs/" + #{book.thumb})
+
+		each book in allBooks
+			p=book.title

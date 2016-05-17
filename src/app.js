@@ -23,29 +23,22 @@ var express = require ('express')
 var bodyparser = require ('body-parser')
 var fs = require ('fs')
 
-//app.use!
-
 var app = express()
 app.set('views', './src/views')
 app.set('view engine', 'jade')
 
+app.use(express.static('./resources'))
 
-app.get('/', function(req,res){
-	function JSONreader(filename, callback){
-		fs.readFile(filename, function(err,data) {
-		if (err) {
-			throw err;
+app.get('/', (req,res) => {
+
+	fs.readFile('./resources/books.json', function(error, data){
+		if(error) {
+			throw error
+		} else {
+			var parsedBooks = JSON.parse(data)
+			console.log( parsedBooks )
+			res.render('index', { allBooks : parsedBooks })
 		}
-		var parsedJSON = JSON.parse(data);
-
-		console.log("JSON file objects : " + parsedJSON.length)
-
-		callback(parsedJSON);
-		});
-	}
-
-	JSONreader('./books.json', function(parsedJSON){
-		res.render('index', {allBooks: parsedJSON})
 	})
 
 })
