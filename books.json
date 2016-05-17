@@ -1,0 +1,21 @@
+[
+{
+	"bookcode": "HP-PhilosophersStone",
+	"title": "Harry Potter Philosopher's Stone",
+	"author": "J.K. Rowling",
+	"url": "./src/resources/HP-PhilosophersStone-l"
+},
+{
+	"bookcode": "HP-AndTheHalfBloodPrince",
+	"title": "Harry Potter and the Half-Blood Prince",
+	"author": "J.K. Rowling",
+	"url": "./src/resources/HP-AndTheHalfBloodPrince-l"
+},
+{
+	"bookcode": "HP-AndTheOrderOfThePhoenix",
+	"title": "Harry Potter and the Order of the Phoenix",
+	"author": "J.K. Rowling",
+	"url": "./src/resources/HP-AndTheOrderOfThePhoenix-l"
+}
+
+]
