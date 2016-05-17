@@ -10,13 +10,51 @@
 // install them first in the folder with git bash
 // parse data and load img in a function that can be called upon
 
+// !!
+// Get book images
+// Tell express to use a static folder
+// Make script to control DOM and do AJAX
+// DOM: listen for clicks
+// AJAX: Get book details
+// Create book API
 
-var fs = require ('fs')
+
 var express = require ('express')
 var bodyparser = require ('body-parser')
+var fs = require ('fs')
+
+//app.use!
 
 var app = express()
 app.set('views', './src/views')
 app.set('view engine', 'jade')
+
+
+app.get('/', function(req,res){
+	function JSONreader(filename, callback){
+		fs.readFile(filename, function(err,data) {
+		if (err) {
+			throw err;
+		}
+		var parsedJSON = JSON.parse(data);
+
+		console.log("JSON file objects : " + parsedJSON.length)
+
+		callback(parsedJSON);
+		});
+	}
+
+	JSONreader('./books.json', function(parsedJSON){
+		res.render('index', {allBooks: parsedJSON})
+	})
+
+})
+
+
+
+var server = app.listen(3000, function () {
+	console.log('User info app listening on port: ' + server.address().port);
+});
+
 
 

@@ -3,19 +3,25 @@
 	"bookcode": "HP-PhilosophersStone",
 	"title": "Harry Potter Philosopher's Stone",
 	"author": "J.K. Rowling",
-	"url": "./src/resources/HP-PhilosophersStone-l"
+	"description": "Nice Harry Potter book!",
+	"thumb": "../src/resources/HP-PhilosophersStone-s.jpg",
+	"cover": "../src/resources/HP-PhilosophersStone-l.jpg"
 },
 {
 	"bookcode": "HP-AndTheHalfBloodPrince",
 	"title": "Harry Potter and the Half-Blood Prince",
 	"author": "J.K. Rowling",
-	"url": "./src/resources/HP-AndTheHalfBloodPrince-l"
+	"description": "Nice Harry Potter book!",
+	"thumb": "../src/resources/HP-PhilosophersStone-s.jpg",
+	"cover": "../src/resources/HP-AndTheHalfBloodPrince-l.jpeg"
 },
 {
 	"bookcode": "HP-AndTheOrderOfThePhoenix",
 	"title": "Harry Potter and the Order of the Phoenix",
 	"author": "J.K. Rowling",
-	"url": "./src/resources/HP-AndTheOrderOfThePhoenix-l"
+	"description": "Nice Harry Potter book!",
+	"thumb": "../src/resources/HP-PhilosophersStone-s.jpg",
+	"cover": "../src/resources/HP-AndTheOrderOfThePhoenix-l.jpeg"
 }
 
 ]

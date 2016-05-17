@@ -1,6 +1,9 @@
 doctype html
 html
 	head
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js")
 	body
 
-		p Books
+		h3 Books
+		each bookThumb in allBooks
+			img(src='#{bookThumb.url}')
