@@ -2,8 +2,14 @@ doctype html
 html
 	head
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js")
+		script(src="/javascript/custom.js")
 	body
 
 		h3 Books
 		each book in allBooks
-			img(src="/imgs/" + book.thumb)
+			img.thumb(src="/imgs/" + book.thumb, style="height:150px; margin:10px;", title=book.title)
+		div#display(style="width:60%; float:left; padding:0 20%;")
+			img#cover(style="width:100%;")
+			h2#title
+			p#author
+			p#description

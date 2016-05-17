@@ -1,6 +1,5 @@
 [
 {
-	"bookcode": "HP-PhilosophersStone",
 	"title": "Harry Potter Philosopher's Stone",
 	"author": "J.K. Rowling",
 	"description": "Nice Harry Potter book!",
@@ -8,7 +7,6 @@
 	"cover": "HP-PhilosophersStone-l.jpg"
 },
 {
-	"bookcode": "HP-AndTheHalfBloodPrince",
 	"title": "Harry Potter and the Half-Blood Prince",
 	"author": "J.K. Rowling",
 	"description": "Nice Harry Potter book!",
@@ -16,7 +14,6 @@
 	"cover": "HP-AndTheHalfBloodPrince-l.jpg"
 },
 {
-	"bookcode": "HP-AndTheOrderOfThePhoenix",
 	"title": "Harry Potter and the Order of the Phoenix",
 	"author": "J.K. Rowling",
 	"description": "Nice Harry Potter book!",
