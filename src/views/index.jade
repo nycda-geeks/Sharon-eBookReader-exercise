@@ -6,7 +6,4 @@ html
 
 		h3 Books
 		each book in allBooks
-			img(src="imgs/" + #{book.thumb})
-
-		each book in allBooks
-			p=book.title
+			img(src="/imgs/" + book.thumb)
